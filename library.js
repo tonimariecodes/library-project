@@ -2,7 +2,7 @@ console.clear();
 
 const myLibrary = [];
 
-function Book() {
+function Book(title, author, pages, isRead) {
   this.id = crypto.randomUUID();
   this.title = title;
   this.author = author;
@@ -26,6 +26,19 @@ function displayLibrary() {
     card.dataset.id = book.id;
 
     card.innerHTML = `<h3>${book.title}</h3>
-    <p><strong>Author:</strong>${book.author}</p>`;
+    <p><strong>Author:</strong> ${book.author}</p>
+    <p>
+      <strong>Pages:</strong> ${book.pages}
+    </p>
+    <p>
+      <strong>Status:</strong> ${book.isRead ? "Read" : "Not Read"}
+    </p>`;
+    libraryDiv.appendChild(card);
   });
 }
+
+addBookToLibrary("The Hobbit", "J.R.R Tolkien", 295, true);
+addBookToLibrary("Harry Potter", "J.K Rowling", 410, false);
+addBookToLibrary("Atomic Habits", "James Clear", 320, true);
+
+displayLibrary();
