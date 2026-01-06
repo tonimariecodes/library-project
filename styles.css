@@ -1,0 +1,11 @@
+#library {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.book-card {
+  border: 1px solid black;
+  padding: 1rem;
+  border-radius: 8px;
+}
