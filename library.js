@@ -24,5 +24,8 @@ function displayLibrary() {
     const card = document.createElement("div");
     card.classList.add("book-card");
     card.dataset.id = book.id;
+
+    card.innerHTML = `<h3>${book.title}</h3>
+    <p><strong>Author:</strong>${book.author}</p>`;
   });
 }
