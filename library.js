@@ -19,4 +19,10 @@ function addBookToLibrary(title, author, pages, isRead) {
 function displayLibrary() {
   const libraryDiv = document.getElementById("library");
   libraryDiv.innerHTML = "";
+
+  myLibrary.forEach((book) => {
+    const card = document.createElement("div");
+    card.classList.add("book-card");
+    card.dataset.id = book.id;
+  });
 }
