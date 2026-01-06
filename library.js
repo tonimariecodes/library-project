@@ -14,3 +14,9 @@ function addBookToLibrary(title, author, pages, isRead) {
   const newBook = new Book(title, author, pages, isRead);
   myLibrary.push(newBook);
 }
+
+// Displaying the library
+function displayLibrary() {
+  const libraryDiv = document.getElementById("library");
+  libraryDiv.innerHTML = "";
+}
