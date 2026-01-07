@@ -39,9 +39,21 @@ function displayLibrary() {
 
 // form handling
 const form = document.getElementById("book-form");
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
 
-addBookToLibrary("The Hobbit", "J.R.R Tolkien", 295, true);
-addBookToLibrary("Harry Potter", "J.K Rowling", 410, false);
-addBookToLibrary("Atomic Habits", "James Clear", 320, true);
+  const title = document.getElementById("title").value;
+  const author = document.getElementById("author").value;
+  const pages = document.getElementById("pages").value;
+  const isRead = document.getElementById("isRead").checked;
+
+  addBookToLibrary(title, author, pages, isRead);
+
+  form.reset();
+});
+
+// addBookToLibrary("The Hobbit", "J.R.R Tolkien", 295, true);
+// addBookToLibrary("Harry Potter", "J.K Rowling", 410, false);
+// addBookToLibrary("Atomic Habits", "James Clear", 320, true);
 
 displayLibrary();
