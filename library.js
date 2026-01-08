@@ -52,8 +52,8 @@ form.addEventListener("submit", (e) => {
   form.reset();
 });
 
-// addBookToLibrary("The Hobbit", "J.R.R Tolkien", 295, true);
-// addBookToLibrary("Harry Potter", "J.K Rowling", 410, false);
+addBookToLibrary("The Hobbit", "J.R.R Tolkien", 295, true);
+addBookToLibrary("Harry Potter", "J.K Rowling", 410, false);
 // addBookToLibrary("Atomic Habits", "James Clear", 320, true);
 
 displayLibrary();
