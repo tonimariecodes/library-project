@@ -9,3 +9,7 @@
   padding: 1rem;
   border-radius: 8px;
 }
+
+#book-form {
+  border: 1px solid black;
+}
