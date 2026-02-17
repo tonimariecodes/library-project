@@ -54,4 +54,6 @@ form.addEventListener("submit", (e) => {
   form.reset();
 });
 
+addBookBtn.addEventListener("click", (e) => {});
+
 displayLibrary();
