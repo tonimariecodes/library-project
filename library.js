@@ -2,6 +2,7 @@ console.clear();
 
 const myLibrary = [];
 const addBookBtn = document.querySelector(".add-book-btn");
+const bookList = document.querySelector(".book-list");
 
 function Book(title, author, pages, isRead) {
   this.id = crypto.randomUUID();
